@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,700;1,900&family=Noto+Sans+JP:wght@400;700&family=Yuji+Mai&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+}
+
+html,
+body {
+  overflow: hidden;
+  /*文字の色*/
+  color: white;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  /* canvasを後ろに*/
+  z-index: -1;
+}
+
+/* スタイリング */
+header {
+  display: flex;
+  justify-content: space-around;
+  /*縦のスペースを中央*/
+  align-items: center;
+  padding: 20px;
+
+}
+
+header .logo {
+  font-size: 35px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+main {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-46%, -50%);
+  text-align: center;
+}
+
+main h1 {
+  font-size: 3rem;
+  /*折り返し、なし*/
+  white-space: nowrap;
+  margin-bottom: 25px;
+}
+
+main p {
+  font-size: 15px;
+}
